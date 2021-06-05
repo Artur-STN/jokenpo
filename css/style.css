@@ -1,0 +1,436 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Poppins';
+
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #222;
+
+    height: 100vh;
+
+}
+
+header.start {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+
+    outline: none;
+
+    z-index: 5;
+
+}
+
+header.start .button {
+
+    background: white;
+    color: #2B9EB3;
+
+    font-size: 3rem;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 0 1rem;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+header.start .button:hover {
+
+    background: #2B9EB3;
+    color: white;
+
+    text-shadow: 0 0 15px #222;
+
+    box-shadow: 0 0 15px white;
+
+}
+
+#checkboxStart {
+
+    display: none;
+
+}
+
+#checkboxStart:checked~header.start {
+
+    left: -100vw;
+
+    transition: 0.2s;
+
+}
+
+main {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    height: 600px;
+
+}
+
+main h1,
+main p {
+
+    color: white;
+
+    font-family: 'Poppins';
+    font-weight: 400;
+
+}
+
+main div.allOptions {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 0 4rem;
+
+}
+
+main div.allOptions div p {
+
+    font-size: 2rem;
+
+    text-align: center;
+
+    padding-bottom: 1rem;
+
+}
+
+main div.allOptions h1 {
+
+    font-family: 'Acme';
+    font-size: 10rem;
+
+    text-shadow: 0 0 15px black;
+
+}
+
+main div.allOptions img {
+
+    background: white;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 10px;
+
+}
+
+main div.options {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 700px;
+
+}
+
+main div.options img {
+
+    background: white;
+
+    border-radius: 10px;
+
+    width: 200px;
+    height: 200px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+main div.options img:hover {
+
+    box-shadow: 0 0 15px black;
+
+    transform: scale(1.2);
+
+}
+
+section.sectionResultado {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    background: rgba(255, 255, 255, 0.336);
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    right: -100vw;
+
+    z-index: 4;
+
+}
+
+section.sectionResultado h1 {
+
+    font-family: 'Poppins';
+    font-size: 5rem;
+    font-weight: 800;
+
+    text-shadow: 0 0 15px #222;
+
+}
+
+section.sectionResultado .fas {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    color: #222;
+
+    font-size: 2rem;
+
+    border-radius: 50px;
+
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+section.sectionResultado .fas:hover {
+
+    background: #222;
+    color: white;
+
+}
+
+#checkboxSection {
+
+    display: none;
+
+}
+
+#checkboxSection:checked~section.sectionResultado {
+
+    right: 0;
+
+    transition: 0.2s;
+
+}
+
+@media (max-width: 730px) {
+
+    main {
+
+        height: 500px;
+
+    }
+
+    main div.allOptions {
+
+        padding: 0 0;
+
+    }
+
+    main .allOptions h1.tagX {
+
+        font-size: 5rem;
+
+    }
+
+    main .allOptions div {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        flex-direction: column;
+
+    }
+
+    main .allOptions div img {
+
+        width: 150px;
+        height: 150px;
+
+    }
+
+    main div.options {
+
+        width: 500px;
+
+    }
+
+    main div.options img {
+
+        width: 150px;
+        height: 150px;
+
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    main {
+
+        height: 400px;
+
+    }
+
+    main div.allOptions {
+
+        padding: 0 0;
+
+    }
+
+    main .allOptions h1.tagX {
+
+        font-size: 4rem;
+
+    }
+
+    main .allOptions div img {
+
+        width: 100px;
+        height: 100px;
+
+    }
+
+    main div.options {
+
+        width: 350px;
+
+    }
+
+    main div.options img {
+
+        width: 100px;
+        height: 100px;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    body {
+
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    main h1 {
+
+        font-size: 1.5rem;
+
+    }
+
+    main h1.h1Escolha {
+        
+        position: fixed;
+        top: 40px;
+        
+        font-size: 1.5rem;
+
+        z-index: 4;
+
+    }
+
+    main div.allOptions {
+
+        flex-direction: column;
+
+        padding: 0;
+
+    }
+
+    main div.allOptions div p {
+
+        font-size: 1.5rem;
+
+    }
+
+    main .allOptions h1.tagX {
+
+        font-size: 3rem;
+
+    }
+
+    main div.options {
+
+        flex-direction: column;
+
+        background: rgba(0, 121, 129, 9);
+
+        width: 100vw;
+        height: 100vh;
+
+        padding: 7rem 0;
+        
+        position: fixed;
+        top: 0;
+
+        z-index: 3;
+
+        transition: 0.2s;
+
+    }
+
+    section.sectionResultado {
+
+        background: rgba(255, 255, 255, 0.9);
+
+    }
+
+    section.sectionResultado h1 {
+
+        font-size: 3rem;
+    
+    }
+
+    #checkboxSection:checked ~ div.option {
+
+        top: -100vh;
+
+    }
+
+}

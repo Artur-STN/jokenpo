@@ -10,14 +10,95 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/script.js"></script>
+
+        <link rel="shortcut icon" href="/imagens/favicon.png" type="image/x-icon">
+
         <title>Jokenpô</title>
 
     </head>
 
     <body>
 
+        <input type="checkbox" name="" id="checkboxStart">
         
-        
+        <header class="start">
+            
+            <label for="checkboxStart">
+    
+                <p class="button">COMEÇAR</p>
+    
+            </label>
+
+        </header>
+
+        <main>
+
+            <div class="allOptions">
+
+                <div>
+
+                    <p>Sua Escolha</p>
+
+                    <img id="optionPlayer" src="/imagens/branco.png" alt="escolha computador">
+
+                </div>
+
+                <h1 class="tagX">X</h1>
+
+                <div>
+
+                    <p>Computador</p>
+
+                    <img id="optionComputer" src="/imagens/branco.png" alt="escolha player">
+
+                </div>
+
+            </div>
+
+            <input type="checkbox" id="checkboxSectionMobile">
+            
+            <h1 class="h1Escolha">Escolha a sua opção ↓</h1>
+            
+            <div class="options">
+                
+                <label for="checkboxSection">
+                    <img onclick="insertOptionPlayer('/imagens/papel.png')" src="/imagens/papel.png" alt="papel">
+                </label>
+
+                <label for="checkboxSection">
+                    <img onclick="insertOptionPlayer('/imagens/tesoura.png')" src="/imagens/tesoura.png" alt="papel">
+                </label>
+
+                <label for="checkboxSection">
+                    <img onclick="insertOptionPlayer('/imagens/pedra.png')" src="/imagens/pedra.png" alt="papel">
+                </label>
+
+            </div>
+
+        </main>
+
+        <input type="checkbox" id="checkboxSection">
+
+        <section class="sectionResultado">
+
+            <h1 id="resultado">RESULTADO</h1>
+
+            <label for="checkboxSection">
+                
+                <i class="fas fa-arrow-right"></i>
+
+            </label>
+
+        </section>
+
     </body>
 
 </html>
