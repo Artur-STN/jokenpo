@@ -255,6 +255,12 @@ section.sectionResultado .fas:hover {
 
 }
 
+#checkboxSectionMobile {
+
+    display: none;
+
+}
+
 @media (max-width: 730px) {
 
     main {
@@ -336,7 +342,7 @@ section.sectionResultado .fas:hover {
 
     main div.options {
 
-        width: 350px;
+        width: 100%;
 
     }
 
@@ -366,12 +372,12 @@ section.sectionResultado .fas:hover {
 
     main h1.h1Escolha {
         
-        position: fixed;
-        top: 40px;
-        
         font-size: 1.5rem;
 
-        z-index: 4;
+        border-bottom: #2B9EB3 1px solid;
+
+        margin-top: 3rem;
+        padding-bottom: 1rem;
 
     }
 
@@ -399,19 +405,9 @@ section.sectionResultado .fas:hover {
 
         flex-direction: column;
 
-        background: rgba(0, 121, 129, 9);
-
-        width: 100vw;
-        height: 100vh;
-
-        padding: 7rem 0;
+        gap: 50px;
         
-        position: fixed;
-        top: 0;
-
-        z-index: 3;
-
-        transition: 0.2s;
+        padding: 3rem 0;
 
     }
 
