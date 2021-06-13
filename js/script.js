@@ -7,9 +7,9 @@ function insertOptionComputer() {
 
     let srcImages = [
 
-        '/imagens/papel.png',
-        '/imagens/tesoura.png',
-        '/imagens/pedra.png'
+        'imagens/papel.png',
+        'imagens/tesoura.png',
+        'imagens/pedra.png'
 
     ]
 
@@ -29,15 +29,15 @@ function insertOptionComputer() {
 
 function verificaSrcImagem(srcParams) {
 
-    if (srcParams == '/imagens/papel.png') {
+    if (srcParams == 'imagens/papel.png') {
 
         player = 'papel'
 
-    } else if (srcParams == '/imagens/tesoura.png') {
+    } else if (srcParams == 'imagens/tesoura.png') {
 
         player = 'tesoura'
 
-    } else if (srcParams == '/imagens/pedra.png') {
+    } else if (srcParams == 'imagens/pedra.png') {
 
         player = 'pedra'
 
